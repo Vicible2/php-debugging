@@ -62,12 +62,12 @@ new_exercise(5);
 // Fix the code so the for loop only pushes a-z in the array
 
 $arr = [];
-for ($letter = 'a'; $letter <= 'z'; $letter++) {
+for ($letter = 'a'; $letter <=> 'aa'; $letter++) {
     array_push($arr, $letter);
 }
 
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
-//Solution: 
+//Solution: use comparison operator: up till aa (one more than z), to include z, then stop
 
 
 
