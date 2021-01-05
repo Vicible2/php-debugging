@@ -11,6 +11,8 @@ declare(strict_types=1);
 // Below we're defining a function, but it doesn't work when we run it.
 // Look at the error you get, read it and it should tell you the issue...,
 // sometimes, even your IDE can tell you what's wrong
+
+
 echo "Exercise 1 starts here:";
 
 function new_exercise() {
@@ -18,6 +20,7 @@ function new_exercise() {
     $block = "<br/><hr/><br/><br/>Exercise $x starts here:<br/>";
     echo $block;
 }
+//Solution: Define variable $x first
 
 new_exercise(2);
 // === Exercise 2 ===
@@ -28,6 +31,7 @@ $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "su
 $monday = $week[0];
 
 echo $monday;
+//Solution: First item in an array is 0, not 1
 
 new_exercise(3);
 // === Exercise 3 ===
@@ -35,6 +39,7 @@ new_exercise(3);
 
 $str ='“Debugged !" Also very fun”';
 echo substr($str, 0, 14);
+//Solution: add single quotation marks, and double in Debugged, else try: selecting last double quotation mark and inserting it after !
 
 new_exercise(4);
 // === Exercise 4 ===
@@ -47,6 +52,9 @@ foreach($week as &$day) {
 }
 
 print_r($week);
+//Solution: add & before foreach $value (2nd parameter)
+
+
 
 new_exercise(5);
 // === Exercise 5 ===
@@ -59,6 +67,7 @@ for ($letter = 'a'; $letter <= 'z'; $letter++) {
 }
 
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
+//Solution: 
 
 
 
